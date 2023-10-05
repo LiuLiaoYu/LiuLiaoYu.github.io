@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200"
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black">
+  <defs>
+    <g id="arc">
+      <path d='M 30.717968 ,60  A 40,40 0 1 0 169.282032,60 ' />
+      <path d='M 65.358984 ,40  A 40,40 0 1 0 134.641016,40 ' />
+    </g>
+  </defs>
+
+  <style>
+    * {
+      fill-opacity: 0;
+      stroke-linecap: round;
+    }
+
+    .b {
+      stroke-width: 25;
+      stroke: white;
+    }
+
+    .k {
+      stroke: black;
+    }
+  </style>
+
+  <use class="b" xlink:href="#arc" />
+  <use class="b" xlink:href="#arc" transform='rotate(60,100,100)' />
+  <use class="b" xlink:href="#arc" transform='rotate(120,100,100)' />
+  <use class="b" xlink:href="#arc" transform='rotate(180,100,100)' />
+  <use class="b" xlink:href="#arc" transform='rotate(240,100,100)' />
+  <use class="b" xlink:href="#arc" transform='rotate(300,100,100)' />
+
+  <use class="k" xlink:href="#arc" />
+  <use class="k" xlink:href="#arc" transform='rotate(60,100,100)' />
+  <use class="k" xlink:href="#arc" transform='rotate(120,100,100)' />
+  <use class="k" xlink:href="#arc" transform='rotate(180,100,100)' />
+  <use class="k" xlink:href="#arc" transform='rotate(240,100,100)' />
+  <use class="k" xlink:href="#arc" transform='rotate(300,100,100)' />
+  <circle class="k" cx='100' cy='100' r='40' />
+
+</svg>
