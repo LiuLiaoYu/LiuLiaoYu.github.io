@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/res/Potato.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="res/Potato.png" type="image/png">
+  <title>LiuLiaoYu - Main</title>
+  <meta name="description" content="main page of LiuLiaoYu">
+  <script type="module" crossorigin src="/assets/index-e3b13641.js"></script>
+  <link rel="stylesheet" href="/assets/index-9081122f.css">
 </head>
-
-<body>
-  <h1>demo</h1>
-  <div><a href="/demo/ProcessScheduling">ProcessScheduling</a></div>
-  <div><a href="/demo/process-scheduling-timeline-visualization">ProcessScheduling</a></div>
-
+<body class="font-sans dark:text-white dark:bg-hex-121212">
+  <div id="app"></div>
+  <noscript>
+    <div>Please enable JavaScript to use this application.</div>
+  </noscript>
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  
 </body>
-
 </html>
