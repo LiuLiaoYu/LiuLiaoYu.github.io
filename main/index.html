@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Refresh" content="0; URL=/main" />
-  <title>LiuLiaoYu</title>
+  <link rel="icon" href="res/Potato.png" type="image/png">
+  <title>LiuLiaoYu - Main</title>
+  <meta name="description" content="main page of LiuLiaoYu">
+  <script type="module" crossorigin src="./assets/index-b6b2e798.js"></script>
+  <link rel="stylesheet" href="./assets/index-844c9736.css">
 </head>
-
-<body>
-
+<body class="font-sans dark:text-white dark:bg-hex-121212">
+  <div id="app"></div>
+  <noscript>
+    <div>Please enable JavaScript to use this application.</div>
+  </noscript>
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  
 </body>
-
 </html>
